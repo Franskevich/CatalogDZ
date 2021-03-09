@@ -1,0 +1,13 @@
+C:\Users\Татьяна\Desktop\programirovanie\CatalogDZ\bin\Debug\netcoreapp3.1\CatalogDZ.exe
+C:\Users\Татьяна\Desktop\programirovanie\CatalogDZ\bin\Debug\netcoreapp3.1\CatalogDZ.deps.json
+C:\Users\Татьяна\Desktop\programirovanie\CatalogDZ\bin\Debug\netcoreapp3.1\CatalogDZ.runtimeconfig.json
+C:\Users\Татьяна\Desktop\programirovanie\CatalogDZ\bin\Debug\netcoreapp3.1\CatalogDZ.runtimeconfig.dev.json
+C:\Users\Татьяна\Desktop\programirovanie\CatalogDZ\bin\Debug\netcoreapp3.1\CatalogDZ.dll
+C:\Users\Татьяна\Desktop\programirovanie\CatalogDZ\bin\Debug\netcoreapp3.1\CatalogDZ.pdb
+C:\Users\Татьяна\Desktop\programirovanie\CatalogDZ\obj\Debug\netcoreapp3.1\CatalogDZ.csprojAssemblyReference.cache
+C:\Users\Татьяна\Desktop\programirovanie\CatalogDZ\obj\Debug\netcoreapp3.1\CatalogDZ.AssemblyInfoInputs.cache
+C:\Users\Татьяна\Desktop\programirovanie\CatalogDZ\obj\Debug\netcoreapp3.1\CatalogDZ.AssemblyInfo.cs
+C:\Users\Татьяна\Desktop\programirovanie\CatalogDZ\obj\Debug\netcoreapp3.1\CatalogDZ.csproj.CoreCompileInputs.cache
+C:\Users\Татьяна\Desktop\programirovanie\CatalogDZ\obj\Debug\netcoreapp3.1\CatalogDZ.dll
+C:\Users\Татьяна\Desktop\programirovanie\CatalogDZ\obj\Debug\netcoreapp3.1\CatalogDZ.pdb
+C:\Users\Татьяна\Desktop\programirovanie\CatalogDZ\obj\Debug\netcoreapp3.1\CatalogDZ.genruntimeconfig.cache
