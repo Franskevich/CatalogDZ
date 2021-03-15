@@ -13,9 +13,6 @@ namespace CatalogDZ
             Console.WriteLine(x[0]);
             Console.WriteLine(x[1]);
         }
-        {
-
-        }
         
     }
 }
