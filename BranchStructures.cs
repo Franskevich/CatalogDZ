@@ -2,25 +2,31 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CatalogDZ
+namespace Methods
 {
-    public static class BranchStructures
+    class BrunchStructures
     {
         //1
-        public static int MultiplyOrAdd(int a, int b)
+        public static int SelectMultiplicationOrDifference(int a, int b)
         {
-            if (a > b)
+            if (a != b)
             {
-                return a * b;
+                if (a > b)
+                {
+                    return a + b;
+                }
+                else
+                {
+                    return a * b;
+                }
             }
             else
             {
-                return a + b;
+                return a - b;
             }
-
         }
         //2
-        public static int DetermineWhichQuaterPointBelongs(int x, int y)
+        public static int DefineQuarter(int x, int y)
         {
             if (x > 0)
             {
@@ -45,47 +51,45 @@ namespace CatalogDZ
                 }
             }
         }
-        //3
-        public static int[] OutputInAscendingOrder(int A, int B, int C)
-        {         
-            if (A < B && A <= C)
+        //3 
+        public static int[] SortNumbersInAscending(int a, int b, int c)
+        {
+            int[] output = new int[3];
+            if (a < b && a <= c)
             {
-                if (B <= C)
+                if (b <= c)
                 {
-                    return new int[] {A,B,C};                   
+                    return new int[] { a, b, c };
                 }
                 else
                 {
-                    return new int[] {A,C,B};                        
+                    return new int[] { a, c, b };
                 }
             }
-            if (B < A && B <=C)
+            if (b < a && b <= c)
             {
-                if (A <= C)
+                if (a <= c)
                 {
-                    return new int[] {B,A,C};                   
+                    return new int[] { b, a, c };
                 }
                 else
                 {
-                    return new int[] {B,C,A};                   
+                    return new int[] { b, c, a };
                 }
             }
 
-            if (C < A && C <= B)
+            if (c < a && c <= b)
             {
-                if (A <= B)
+                if (a <= b)
                 {
-                    return new int[] {C,A,B};
+                    return new int[] { a, b, c };
                 }
                 else
                 {
-                    return new int[] {C,B,A};
+                    return new int[] { c, b, a };
                 }
             }
-            else
-            {
-                return new int[] { A, B, C };
-            }
+            return new int[] { a, b, c };
         }
         //4
         public static class SolveQuadraticEquation
@@ -143,42 +147,33 @@ namespace CatalogDZ
                 return new double[0];
             }
         }
-        public static string[] PrintNumberInWords ()
-        {            
+        //5
+        public static string NumberInWords(int xy)
+        {
             string a = "", b = "";
 
             switch (xy)
             {
                 case 10:
-                    Console.WriteLine("десять");
-                    break;
+                    return ("десять");
                 case 11:
-                    Console.WriteLine("одиннадцать");
-                    break;
+                    return ("одиннадцать");
                 case 12:
-                    Console.WriteLine("двенадцать");
-                    break;
+                    return ("двенадцать");
                 case 13:
-                    Console.WriteLine("тринадцать");
-                    break;
+                    return ("тринадцать");
                 case 14:
-                    Console.WriteLine("четырнадцать");
-                    break;
+                    return ("четырнадцать");
                 case 15:
-                    Console.WriteLine("пятнадцать");
-                    break;
+                    return ("пятнадцать");
                 case 16:
-                    Console.WriteLine("шестнадцать");
-                    break;
+                    return ("шестнадцать");
                 case 17:
-                    Console.WriteLine("семнадцать");
-                    break;
+                    return ("семнадцать");
                 case 18:
-                    Console.WriteLine("восемнадцать");
-                    break;
+                    return ("восемнадцать");
                 case 19:
-                    Console.WriteLine("девятнадцать");
-                    break;
+                    return ("девятнадцать");
                 default:
                     switch (xy / 10)
 
@@ -243,8 +238,7 @@ namespace CatalogDZ
                             b = "девять";
                             break;
                     }
-                    Console.WriteLine($"{a} {b}");
-                    break;
+                    return ($"{a} {b}");
             }
         }
     }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CatalogDZ
+namespace Methods
 {
     class Loops
     {
@@ -13,17 +13,14 @@ namespace CatalogDZ
 
             for (int i = 1; i != b; i++)
             {
-                c = c * a;
+                c *= a;
             }
             return c;
         }
         //2
-        public static int[] PrintNumbersDivisibleByA(int a)
+        public static void PrintNumbersDivisibleByA(int a)
         {
-            int a = Convert.ToInt32(Console.ReadLine());
-
             for (int i = a; i < 1000; i += a)
-
             {
                 if (i % a == 0)
                 {
@@ -32,10 +29,8 @@ namespace CatalogDZ
             }
         }
         //3
-        public static int[] FindTheNumberOfPositiveIntegersWhoseSquaresAreLessThanA(int a)
+        public static void FindTheNumberOfPositiveIntegersWhoseSquaresAreLessThanA(int a)
         {
-            int a = Convert.ToInt32(Console.ReadLine());
-
             for (int i = 1; i * i < a; i++)
             {
                 Console.WriteLine(i);
@@ -44,78 +39,66 @@ namespace CatalogDZ
         //4
         public static int FindTheLargestDivisor(int a)
         {
-            int a = Convert.ToInt32(Console.ReadLine());
-
             int i = 2;
             while (a % i != 0)
             {
                 i++;
             }
-            Console.WriteLine(a / i);
+            return (a / i);
         }
         //5
-        public static int[] SumOfNumbersDivisibleBy7(int a, int b)
+        public static int SumOfNumbersDivisibleBy7(int a, int b)
         {
-            int A = Convert.ToInt32(Console.ReadLine());
-            int B = Convert.ToInt32(Console.ReadLine());
-
             int Sum = 0;
 
-            if (A < B)
+            if (a < b)
             {
-                for (int i = A; i <= B; i++)
+                for (int i = a; i <= b; i++)
                 {
                     if (i % 7 == 0)
                     {
-                        Sum = Sum + i;
+                        Sum += i;
                     }
                 }
             }
-            Console.WriteLine(Sum);
+            return Sum;
         }
         //6
         public static int PrintTheNumberOfTheFibonacciSeries(int n)
         {
-            int N = Convert.ToInt32(Console.ReadLine());
-
             int x1 = 0;
             int x2 = 1;
             int sum = 0;
             {
-                for (int i = 1; i < N; i++)
+                for (int i = 1; i < n; i++)
                 {
                     sum = x1 + x2;
                     x1 = x2;
                     x2 = sum;
                 }
-                Console.WriteLine(x2);
+                return x2;
             }
         }
         //7
         public static int FindTheGreatestCommonDivisor(int a, int b)
         {
-            int A = Convert.ToInt32(Console.ReadLine());
-            int B = Convert.ToInt32(Console.ReadLine());
-
-            while (A != 0 && B != 0)
+            while (a != 0 && b != 0)
             {
-                if (A > B)
+                if (a > b)
                 {
-                    A = A % B;
+                    a %= b;
                 }
                 else
                 {
-                    B = B % A;
+                    b %= a;
                 }
             }
-            Console.WriteLine(A + B);
+            return a + b;
         }
         //8
-        public static int Find By Binary Search(int n)
+        public static int FindByBinarySearch(int n)
         {
             // y = n*n*n
-            int y = Convert.ToInt32(Console.ReadLine());
-
             int left = 0;
             int right = y;
             int middle = right;
@@ -132,24 +115,21 @@ namespace CatalogDZ
                 }
                 middle = (left + right) / 2;
             }
-
-            Console.WriteLine(middle);
+            return middle;
         }
         //9
-        public static int[] FindTheNumberOfOddDigitsOfANumber(int a)
+        public static int FindTheNumberOfOddDigitsOfANumber(int n)
         {
-            int n = Convert.ToInt32(Console.ReadLine());
-
             int odd = 0;
             while (n > 0)
             {
-                odd = odd + n % 2;
-                n = n / 10;
+                odd += n % 2;
+                n /= 10;
             }
-            Console.WriteLine(odd);
+            return odd;
         }
         //10
-        public static int[] Find The Mirror Image Of A Number(int a)
+        public static int[] FindTheMirrorImageOfANumber(int a)
         {
             string input = Console.ReadLine();
             string output = "";
@@ -158,12 +138,11 @@ namespace CatalogDZ
             {
                 output += input[i];
             }
-            Console.WriteLine(output);
+            return new int[](output);
         }
         //11
-        public static int[] FindNumbersWhoseSumOfEvenDigitsIsGreaterThanTheSumOfOddDigits(int n)
+        public static int FindNumbersWhoseSumOfEvenDigitsIsGreaterThanTheSumOfOddDigits(int n)
         {
-            int n = Convert.ToInt32(Console.ReadLine());
             {
                 int count = 0;
                 for (int i = 1; i <= n; i++)
@@ -189,16 +168,13 @@ namespace CatalogDZ
                         count++;
                     }
                 }
-                Console.WriteLine(count);
+                return count;
             }
         }
         //12
-        public static string DetermineIfThereAreIdenticalNumbers(int a, int b)
+        public static int[] DetermineIfThereAreIdenticalNumbers(int a, int b)
         {
-            string a = Console.ReadLine();
-            string b = Console.ReadLine();
             string answer = "net";
-
             for (int i = 0; i < a.Length; i++)
             {
                 for (int j = 0; j < b.Length; j++)
@@ -209,7 +185,7 @@ namespace CatalogDZ
                     }
                 }
             }
-            Console.WriteLine(answer);
+            return answer;
         }
     }
 }
